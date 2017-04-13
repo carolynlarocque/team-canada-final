@@ -293,11 +293,6 @@
       </ul>
     </section><!--close mobile gallery-->
 
-
-    <section class="row hide-for-small-only" id="galleryLargeSlider">
-    <h2 class="hide">Gallery Slider</h2>
-     
-
      <!-- cannot get them to slide with individual divs, cant have caption
       <div class="swipe">
         <div class="sliderPics">
@@ -332,22 +327,26 @@
         </li>
         -->
 
+    <section class="row hide-for-small-only" id="galleryLargeSlider">
+    <h2 class="hide">Gallery Slider</h2>
 
       <div class="slide">
-        <a href="#" data-but="div1">
+    <a href="#" onclick="divVisibility('Div1');">
           <img src="images/gallery-ss-logo-cap.jpg" alt="Summit Series Logo" class="pic"/>
         </a>
-        <a href="#" data-but="div2">
+        
+    <a href="#" onclick="divVisibility('Div2');"> 
           <img src="images/gallery-pc-logo-cap.jpg" alt="Press Conference Logo" class="pic" />
         </a>
-        <a href="#" data-but="div3">
+    <a href="#" onclick="divVisibility('Div3');"> 
           <img src="images/gallery-ll-logo-cap.jpg" alt="Legends to Legacy Logo" class="pic"/>
         </a>
       </div>
     </section>
 
     <div class="galleryLargeCon hide-for-small-only">
-      <div>
+      
+  <div id="Div1">
         <section class="row ssGallery">
         <h2>SUMMIT SERIES GAME ACTION</h2>
           <div class="medium-3 large-3 columns">
@@ -420,52 +419,137 @@
       </div>
     </div>
 
-    <!--<section class="row galleryLargeCon hide-for-small-only">
-      <h2 class="hide">Images Container</h2>
 
-      <div id="div2" class="toggle">
-        <h2>Summit Series Game Action</h2>
-        <div class="row">
-          <ul class="clearing-thumbs" data-clearing>
-            <li><a href="images/gallery-ss-1.jpg"><img src="images/gallery-ss-1.jpg"></a></li>
-            <li><a href="images/gallery-ss-2.jpg"><img src="images/gallery-ss-2.jpg"></a></li>
-          </ul>
-        </div>
-      </div> end summit series container
+    <div class="galleryLargeCon hide-for-small-only">
 
-      <div id="div1" class="toggle">
-        <h2>Press Conference August 27, 2014</h2>
-        <div class="row">
-          <ul class="clearing-thumbs" data-clearing>
-            <li><a href="images/gallery-ss-1.jpg"><img src="images/gallery-ss-1.jpg"></a></li>
-            <li><a href="images/gallery-ss-2.jpg"><img src="images/gallery-ss-2.jpg"></a></li>
-          </ul>
-        </div>
-      </div>
+    
+    <div id="Div2" style="display: none;">
+        <section class="row ssGallery">
+        <h2>PRESS CONFERENCE AUGUST 27, 2014</h2>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_1.jpg" alt="PC Img 1">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_2.jpg" alt="PC Img 2">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_3.jpg" alt="PC Img 3">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_4.jpg" alt="PC Img 4">
+          </div>
+        </section>
 
-      <div id="div3" class="toggle">
-        <h2>"Legends to Legacy" Reunion Gala October 2, 2014</h2>
-        <div class="medium-4 large-3 columns galleryBox">
-          <img src="images/gallery-ss-1.jpg" alt="Summit Series Action 1">
-        </div>
+        <section class="row ssGallery">
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_5.jpg" alt="PC Img 5">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_6.jpg" alt="PC Img 6">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_7.jpg" alt="PC Img 7">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_8.jpg" alt="PC Img 8">
+          </div>
+        </section>
 
-        <div class="medium-4 large-3 columns galleryBox">
-          <img src="images/gallery-ss-2.jpg" alt="Summit Series Action 2">
-        </div>
-      
-        <div class="medium-4 large-3 columns galleryBox">
-          <img src="images/gallery-ss-3.jpg" alt="Summit Series Action 3">
-        </div>
-
-        <div class="medium-4 large-3 columns galleryBox">
-          <img src="images/gallery-ss-4.jpg" alt="Summit Series Action 4">
-        </div>
+        <section class="row ssGallery">
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_9.jpg" alt="PC Img 9">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_pc_10.jpg" alt="PC Img 10">
+          </div>
+        </section>
+      </div><!--end of div 2-->
     </div>
 
-    </section>
-    
 
-    </div> end off-canvas content -->
+    <div class="galleryLargeCon hide-for-small-only">
+
+    
+    <div id="Div3" style="display: none;">
+        <section class="row ssGallery">
+        <h2>"Legends to legacy" Reunion Gala</h2>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_1.jpg" alt="LL Img 1">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_2.jpg" alt="LL Img 2">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_3.jpg" alt="LL Img 3">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_4.jpg" alt="LL Img 4">
+          </div>
+        </section>
+
+        <section class="row ssGallery">
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_5.jpg" alt="LL Img 5">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_6.jpg" alt="LL Img 6">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_7.jpg" alt="LL Img 7">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_8.jpg" alt="LL Img 8">
+          </div>
+        </section>
+
+        <section class="row ssGallery">
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_9.jpg" alt="LL Img 9">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_10.jpg" alt="LL Img 10">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_11.jpg" alt="LL Img 11">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_12.jpg" alt="LL Img 12">
+          </div>
+        </section>
+
+        <section class="row ssGallery">
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_13.jpg" alt="LL Img 13">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_14.jpg" alt="LL Img 14">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_15.jpg" alt="LL Img 15">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_16.jpg" alt="LL Img 16">
+          </div>
+        </section>
+
+        <section class="row ssGallery">
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_17.jpg" alt="LL Img 17">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_18.jpg" alt="LL Img 18">
+          </div>
+          <div class="medium-3 large-3 columns">
+            <img src="images/gallery_ll_19.jpg" alt="LL Img 19">
+          </div>
+          <div class="medium-3 large-3 columns end">
+            <img src="images/gallery_ll_20.jpg" alt="LL Img 20">
+          </div>
+        </section>
+      </div><!--end of div 2-->
+    </div>
+
+    </div> <!--end off-canvas content -->
 
           <footer id="mainFooter" class="row">
             <section class="small-12 show-for-small-only columns">
