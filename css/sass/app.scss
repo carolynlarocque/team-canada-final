@@ -3,26 +3,9 @@ $paraFont: 'Playfair Display', Times, serif;
 $grey: #363636;
 $red: #a90000;
 
-.boxHelper
-{
-	color: #fff;
-	background-color: #000;
-	text-align: center;
-}
-
 #pano
 {
 	background-color: #666;
-}
-
-.product
-{
-	height: 300px; 
-}
-
-.subProduct
-{
-	height: 142px;
 }
 
 #aboutUs
@@ -50,6 +33,8 @@ $red: #a90000;
 
 #logoMobile
 {
+	width: 60px;
+	height: 61px;
 	display: block;
 	margin: 0 auto;
 }
@@ -65,6 +50,12 @@ $red: #a90000;
 	height: 100px;
 	display: inline-block;
 	margin-left: 15%;
+}
+
+#mobileNav
+{
+	width: 100%;
+	background-color: #000;
 }
 
 #portalBut
@@ -124,6 +115,7 @@ $red: #a90000;
 #offCanvasNav
 {
 	background-color: #000;
+	height: 100%;
 }
 
 #offCanvasNav li a
@@ -143,12 +135,19 @@ $red: #a90000;
   left: 0;
 }
 
-video {
+video 
+{
   background-color: black;
   background-position: center center;
   background-size: contain;
   object-fit: cover;
   width: 100%;
+}
+
+#videoCon
+{
+	position: relative;
+	border-bottom: 5px solid #000;
 }
 
 #overlay
@@ -158,7 +157,34 @@ video {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(255,255,255,.7);
 }
+
+#textCon
+{
+	position: absolute;
+	top: 25%;
+	left: 21%;
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+
+	h3, h4
+	{
+		font-family: $mainFont;
+	}
+
+	h3
+	{
+		font-size: 1.75em;
+	}
+
+	h4
+	{
+		font-size: 1em;
+	}
+}
+
 
 #mainHome
 {
@@ -203,14 +229,13 @@ video {
 		margin: 0 auto;
 		display: block;
 		text-align: center;
-		vertical-align: bottom;
 	}
 	}
 }
 
 #legacyPano
 {
-	background-color: #ccc;
+	background-color: $red;
 	background-repeat: no-repeat;
 	background-position: center;
 	padding-bottom: 20px;
@@ -793,11 +818,14 @@ video {
 		font-family: $mainFont;
 		display: inline-block;
 		text-align: center;
+		width: 100%;
 
 		.tabs-title
 		{
-			width: 100px;
+			width: 30%;
 			float: left;
+			margin-left: 3%;
+			border-right: 4px solid #fff;
 
 			a:hover
 			{
@@ -1027,6 +1055,14 @@ video {
 
 @media screen and (min-width: 40em) {
 	
+	#textCon
+	{
+		h3
+		{
+			font-size: 3.5em;
+		}
+	}
+
 	#tourImg
 	{
 		clear: both;
@@ -1302,9 +1338,18 @@ video {
 
 
 @media screen and (min-width: 64em) {
+
 	#mainHome
 	{
 		padding: 15px 30px;
+	}
+
+	#textCon
+	{
+		h3
+		{
+			font-size: 4em;
+		}
 	}
 
 	.homeSections
@@ -1324,9 +1369,9 @@ video {
 
 	.learnMoreBut
 	{
-		positon: absolute;
+		position: absolute;
 		bottom: 0;
-		background-color: #666;
+		margin: 15px 0 5px 0;
 	}
 
 	#legacyPano 
